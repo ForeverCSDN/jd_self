@@ -1,0 +1,60 @@
+/*重置 css*/
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -webkit-tap-highlight-color:transparent;
+}
+body{
+    font-family: "Microsoft YaHei", sans-serif;
+    font-size:14px;
+}
+a{
+    text-decoration:none;
+    color:#d8505c;
+}
+ul{
+    list-style:none;
+}
+input{
+    border:none;
+    outline:none;
+    -webkit-appearance:none; /*清除移动端默认样式 内阴影立体感*/
+}
+
+/*公用 css*/
+.f-l{
+    float:left;
+}
+.f-r{
+    float:right;
+}
+.clear-fix::before,
+.clear-fix::after{
+    content:"";
+    display: block;
+    height:0;
+    line-height: 0;
+    visibility:hidden;
+    clear:both;
+}
+.m-top{
+    margin-top:10px;
+}
+.m-bottom{
+    margin-bottom:10px;
+}
+.m-left{
+    margin-left:10px;
+}
+.m-right{
+    margin-right:10px;
+}
+/*精灵图共用样式*/
+[class^="icon-"],[class*=" icon-"]{
+    background:url('../images/sprites.png') no-repeat;
+    background-size:200px 200px;
+}

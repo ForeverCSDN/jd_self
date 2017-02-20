@@ -1,0 +1,342 @@
+body{
+    background: #f5f5f5;
+}
+.jd-layout{
+    max-width:640px;
+    min-width:320px;
+    margin:0 auto;
+}
+/*头部*/
+/*header start*/
+.jd-header-fix{
+    width: 100%;
+    height: 40px;
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:9999;
+}
+.jd-header{
+    max-width:640px;
+    min-width:320px;
+    height: 40px;
+    margin:0 auto;
+    background:rgba(201,21,35,0);
+    /*position:fixed;*//*fixed定位是以window作基准的*/
+    position:relative;
+}
+.jd-header .icon-logo{
+    position:absolute;
+    left:5px;
+    top:5px;
+    width: 60px;
+    height: 36px;
+    background-position:0 -103px;
+}
+.jd-header .search{
+    width: 100%;
+    height: 40px;
+    padding-left:70px;
+    padding-right:50px;
+    position:relative;
+}
+.jd-header .search input{
+    width: 100%;
+    height: 30px;
+    margin-top:5px;
+    border-radius:15px;
+    padding-left:30px;
+}
+.jd-header .search .icon-search{
+    position:absolute;
+    left:75px;
+    top:10px;
+    width: 20px;
+    height: 20px;
+    background-position:-60px -109px;
+}
+.jd-header .login{
+    position:absolute;
+    top:0;
+    right:0;
+    width: 50px;
+    height: 40px;
+    text-align:center;
+    line-height:40px;
+    color:#fff;
+}
+/*header end*/
+
+/*轮播图*/
+/*slider start*/
+.jd-slider{
+    width: 100%;
+    overflow:hidden;
+    position:relative;
+}
+.jd-slider ul:first-child{
+    width: 1000%;
+    transform:translateX(-10%);
+    -webkit-transform:translateX(-10%);
+}
+.jd-slider ul:first-child li{
+    width: 10%;
+    float:left;
+}
+.jd-slider ul:first-child li a{
+    display:block;
+}
+.jd-slider ul:first-child li a img{
+    display:block;
+    width: 100%;
+    /*高度等比例缩放*/
+}
+.jd-slider ul:last-child{
+    position:absolute;
+    bottom:6px;
+    left:50%;
+    margin-left:-59px;
+}
+.jd-slider ul:last-child li{
+    float:left;
+    width: 6px;
+    height: 6px;
+    border:1px solid #fff;
+    border-radius:50%;
+    margin-left:10px;
+}
+.jd-slider ul:last-child li.current{
+    background:#fff;
+}
+.jd-slider ul:last-child li:first-child{
+    margin-left:0;
+}
+/*slider end*/
+
+/*导航*/
+/*nav start*/
+.jd-nav{
+    width: 100%;
+    background:#fff;
+    border-bottom:1px solid #ccc;
+}
+.jd-nav ul{
+    width: 100%;
+    padding:15px 0;
+}
+.jd-nav ul li{
+    float:left;
+    width: 25%;
+}
+.jd-nav ul li a{
+    display:block;
+}
+.jd-nav ul li a img{
+    display:block;
+    width: 40px;
+    height: 40px;
+    margin:0 auto;
+}
+.jd-nav ul li a p{
+    text-align:center;
+    font-size:12px;
+    color:#666;
+    padding:8px 0;
+}
+/*nav end*/
+
+/*主体*/
+/*main start*/
+.jd-main{
+    padding:0 5px;
+}
+.jd-product{
+    width: 100%;
+    background:#fff;
+    box-shadow:0 0 10px #ccc;
+}
+.jd-product .jd-product-title{
+    width: 100%;
+    height: 34px;
+    border-bottom:1px solid #d8d8d8;
+    line-height:34px;
+}
+.jd-product .jd-product-title.no-border{
+    border-bottom:none;
+}
+.jd-product-title .pro-icon{
+    float:left;
+    width: 16px;
+    height: 20px;
+    background:url('../images/seckill-icon.png') no-repeat;
+    background-size:16px 20px;
+    margin-top:5px;
+}
+.jd-product-title .pro-tit{
+    float:left;
+    margin-left:10px;
+    color:#d8505c;
+}
+.jd-product-title .pro-time{
+    float:left;
+    margin-left:10px;
+}
+.jd-product-title .pro-time i{
+    /*去掉i的默认样式*/
+    font-style:normal;
+    display:inline-block;
+    width: 15px;
+    height: 15px;
+    text-align:center;
+    line-height:15px;
+    background:#000;
+    color:#fff;
+}
+.jd-product-title .pro-time i:nth-child(3n){
+    background:#fff;
+    width: 3px;
+    color:#000;
+}
+.jd-product .jd-product-content{
+    width: 100%;
+}
+.jd-product-content .jd-pro-con{
+    width: 100%;
+    padding:15px 0;
+}
+.jd-product-content .jd-pro-con li{
+    width: 33.33%;
+    float:left;
+}
+.jd-product-content .jd-pro-con li a{
+    display:block;
+    width: 100%;
+    border-right:1px solid #ccc;
+}
+.jd-product-content .jd-pro-con li:last-child a{
+    border-right:none;
+}
+.jd-product-content .jd-pro-con li a img{
+    display:block;
+    width: 70%;
+    margin:0 auto;
+}
+.jd-product-content .jd-pro-con li p{
+    font-size:12px;
+    text-align:center;
+    padding:6px 0;
+}
+.jd-product-content .jd-pro-con li p:nth-last-child(2){
+    color:#d8505c;
+}
+.jd-product-content .jd-pro-con li p:nth-last-child(1){
+    text-decoration:line-through;
+}
+.jd-product-title h3{
+    font-weight:normal;
+    padding-left:20px;
+    position:relative;
+}
+.jd-product-title h3::before{
+    content:"";
+    width: 3px;
+    height: 12px;
+    background: #d8505c;
+    position:absolute;
+    left:8px;
+    top:11px;
+}
+.jd-product-content .pro-advert{
+    display:block;
+    width: 50%;
+}
+.jd-product-content .pro-advert img{
+    display:block;
+    width: 100%;
+}
+
+/*样式组合*/
+.adv-bottom{
+    border-bottom:1px solid #ccc;
+}
+.adv-left{
+    border-left:1px solid #ccc;
+}
+.adv-right{
+    border-right:1px solid #ccc;
+}
+/*样式组合*/
+
+.jd-list{
+    width: 100%;
+}
+.jd-list .pro-list{
+    display:block;
+    width: calc(50% - 3px);
+    margin-bottom:6px;
+    float:left;
+    background:#fff;
+}
+.jd-list .pro-list img{
+    display:block;
+    width: 100%;
+}
+.jd-list .pro-list:nth-child(2n+1){
+    margin-right:6px;
+}
+.jd-list .pro-list p:nth-last-child(1){
+    padding:0 4px;
+    margin-bottom:5px;
+    line-height:28px;
+}
+.jd-list .pro-list p:nth-last-child(1) span:last-child{
+    width: 50px;
+    height: 28px;
+    border:1px solid #ccc;
+    line-height:28px;
+    text-align:center;
+    color:#cfcfcf;
+    cursor:pointer;
+}
+.jd-list .pro-list p:nth-last-child(2){
+    margin:5px 0;
+    padding:0 3px;
+    font-size:12px;
+    color:#000;
+}
+.jd-for-you{
+    width: 100%;
+    text-align:center;
+    margin:15px 0;
+    position:relative;
+}
+.jd-for-you::after{
+    content:"";
+    position:absolute;
+    left:50%;
+    top:50%;
+    width: 90%;
+    height: 1px;
+    transform:translateX(-50%);
+    background: #ccc;
+    z-index:-10;
+}
+.jd-for-you span{
+    font-size:16px;
+    color:#d8505c;
+    position:relative;
+    background-color:#f5f5f5;
+    padding-left:25px;
+}
+.jd-for-you span::before{
+    content:"";
+    position:absolute;
+    left:3px;
+    top:0;
+    width: 20px;
+    height: 20px;
+    background:url('../images/sprites.png') no-repeat;
+    background-size:200px 200px;
+    background-position:-157px -91px;
+}
+/*main end*/
